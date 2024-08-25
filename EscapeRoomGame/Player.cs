@@ -2,6 +2,8 @@ namespace EscapeRoomGame;
 
 public class Player
 {
+    public static bool LeftTunnelExplored = false;
+    public static bool PasswordFilled = false;
     public static List<string> Inventory { get; set; } = new List<string>();
     public static int InputParse2()
     {
@@ -42,5 +44,51 @@ public class Player
             inputSuccess = int.TryParse(Console.ReadLine(), out parseSucceed);
         }
         return parseSucceed;
+    }
+
+    public static int InputPassword()
+    {
+        var inputSuccess = int.TryParse(Console.ReadLine(), out int passwordGuess);
+        while (!inputSuccess || passwordGuess < 1000 || passwordGuess > 9999)
+        {
+            Console.WriteLine("The device left a message:\nERROR: PASSWORD IS 4 NUMBERS LONG");
+            Thread.Sleep(1000);
+            Console.WriteLine("Would you like to try again?");
+            Console.WriteLine("[1] Yes.\n[2] No.");
+            if (InputParse2() == 1)
+            {
+                Console.WriteLine("Enter a password.");
+                inputSuccess = int.TryParse(Console.ReadLine(), out passwordGuess);
+            }
+            else
+            {
+                inputSuccess = true;
+            }
+        }
+
+        return passwordGuess;
+    }
+
+    public static bool PasswordCheck(int passwordInput)
+    {
+        bool didGuess = false;
+        if (passwordInput == 5131) //5 of diamonds king of hearts ace of spades
+        {
+            didGuess = true;
+        }
+        else
+        {
+            Creep.Chance();
+            Console.WriteLine("The password was incorrect.");
+            Thread.Sleep(1000);
+            Console.WriteLine("Would you like to try again?");
+            Console.WriteLine("[1] Yes.\n[2] No.");
+            if (InputParse2() == 1)
+            {
+                Console.WriteLine("Enter a password.");
+                PasswordCheck(InputPassword());
+            }
+        }
+        return didGuess;
     }
 }

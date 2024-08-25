@@ -13,7 +13,7 @@ public class Creep
         {
             Random r = new Random();
             int randNum = r.Next(1, 11);
-            if (randNum == 10)
+            if (randNum == 5)
             {
                 Activation = true;
             }
@@ -27,7 +27,7 @@ public class Creep
         {
             Random r = new Random();
             int randNum = r.Next(1, 11);
-            if (randNum == 10)
+            if (randNum == 5)
             {
                 Advancement = true;
             }
@@ -41,7 +41,7 @@ public class Creep
         {
             Random r = new Random();
             int randNum = r.Next(1, 11);
-            if (randNum == 10)
+            if (randNum == 5)
             {
                 Penultimate = true;
             }

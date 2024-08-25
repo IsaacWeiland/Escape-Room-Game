@@ -1,0 +1,14 @@
+C:\Users\0ni\Desktop\repos\EscapeRoomGame\EscapeRoomGame\bin\Debug\net7.0\EscapeRoomGame.exe
+C:\Users\0ni\Desktop\repos\EscapeRoomGame\EscapeRoomGame\bin\Debug\net7.0\EscapeRoomGame.deps.json
+C:\Users\0ni\Desktop\repos\EscapeRoomGame\EscapeRoomGame\bin\Debug\net7.0\EscapeRoomGame.runtimeconfig.json
+C:\Users\0ni\Desktop\repos\EscapeRoomGame\EscapeRoomGame\bin\Debug\net7.0\EscapeRoomGame.dll
+C:\Users\0ni\Desktop\repos\EscapeRoomGame\EscapeRoomGame\bin\Debug\net7.0\EscapeRoomGame.pdb
+C:\Users\0ni\Desktop\repos\EscapeRoomGame\EscapeRoomGame\obj\Debug\net7.0\EscapeRoomGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\0ni\Desktop\repos\EscapeRoomGame\EscapeRoomGame\obj\Debug\net7.0\EscapeRoomGame.AssemblyInfoInputs.cache
+C:\Users\0ni\Desktop\repos\EscapeRoomGame\EscapeRoomGame\obj\Debug\net7.0\EscapeRoomGame.AssemblyInfo.cs
+C:\Users\0ni\Desktop\repos\EscapeRoomGame\EscapeRoomGame\obj\Debug\net7.0\EscapeRoomGame.csproj.CoreCompileInputs.cache
+C:\Users\0ni\Desktop\repos\EscapeRoomGame\EscapeRoomGame\obj\Debug\net7.0\EscapeRoomGame.dll
+C:\Users\0ni\Desktop\repos\EscapeRoomGame\EscapeRoomGame\obj\Debug\net7.0\refint\EscapeRoomGame.dll
+C:\Users\0ni\Desktop\repos\EscapeRoomGame\EscapeRoomGame\obj\Debug\net7.0\EscapeRoomGame.pdb
+C:\Users\0ni\Desktop\repos\EscapeRoomGame\EscapeRoomGame\obj\Debug\net7.0\EscapeRoomGame.genruntimeconfig.cache
+C:\Users\0ni\Desktop\repos\EscapeRoomGame\EscapeRoomGame\obj\Debug\net7.0\ref\EscapeRoomGame.dll

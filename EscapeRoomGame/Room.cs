@@ -15,28 +15,40 @@ public class Room
             {
                 case 1:
                     Console.WriteLine("You investigated the bed.");
-                    Thread.Sleep(2000);
+                    Thread.Sleep(1000);
                     Console.WriteLine("There was nothing worthwhile.");
                     Console.ReadLine();
+                    Creep.Chance();
                     break;
                 case 2:
                     Console.WriteLine("You investigated the closet.");
-                    Thread.Sleep(2000);
-                    Console.WriteLine("It is locked.");
-                    Console.ReadLine();
+                    if (Player.Inventory.Contains("closet key"))
+                    {
+                        Console.WriteLine("You unlocked the closet.");
+                        Intro.Outro();
+                    }
+                    else
+                    {
+                        Thread.Sleep(1000);
+                        Console.WriteLine("It is locked.");
+                        Creep.Chance();
+                        Console.ReadLine();
+                    }
                     break;
                 case 3:
-                    Console.WriteLine("You investigated the desk.\n");
-                    Thread.Sleep(2000);
+                    Console.WriteLine("You investigated the desk.");
+                    Thread.Sleep(1000);
                     if (!Player.Inventory.Contains("batteries"))
                     {
                         Console.WriteLine("You picked up some batteries.");
                         Player.Inventory.Add("batteries");
+                        Creep.Chance();
                         Console.ReadLine();
                     }
                     else
                     {
                         Console.WriteLine("There is nothing of interest anymore.");
+                        Creep.Chance();
                         Console.ReadLine();
                     }
                     break;
